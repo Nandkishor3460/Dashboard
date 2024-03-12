@@ -14907,8 +14907,7 @@ dl {
         height: 48px;
         margin: auto;
         vertical-align: middle; }
-    .sidebar .sidebar-brand-wrapper .brand-logo-mini {
-      display: none; }
+    .sidebar .sidebar-brand-wrapper .brand-logo-mini { }
       .sidebar .sidebar-brand-wrapper .brand-logo-mini img {
         width: calc(70px - 50px);
         max-width: 100%;
