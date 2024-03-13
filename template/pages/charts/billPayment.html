@@ -20,13 +20,27 @@
 </head>
 
 <style>
-        .nav-option {
-                cursor: pointer;
-        }
+    .nav-option {
+    cursor: pointer;
+}
 
-        .nav-option:hover {
-                
-        }
+.nav-option a {
+        color: rgba(25, 24, 24, 0.506);
+        text-decoration: none;
+        font-size: 20px;
+}
+
+.nav-option a:hover {
+        color: #000000ef;
+      text-decoration:underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 8px;  
+      text-decoration-color: #9ed8f5;
+      font-size: 22px;
+} 
+
+
+
 
         #cards .col-md-3 {
                 cursor: pointer;       
@@ -51,7 +65,7 @@
                         <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
                                 <a class="sidebar-brand brand-logo" href="index.html"><img
                                                 src="../../assets/images/logo1.png" alt="logo" /></a>
-                                <!-- <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> -->
+                                <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
                         </div>
                         <ul class="nav">
                                 <li class="nav-item nav-profile">
@@ -106,14 +120,16 @@
 
                                 <li class="nav-item sidebar-actions">
                                         <div class="nav-link">
-                                                <div class="ms-3">
-                                                        <div class="border-none">
-                                                                <p class="text-black"></p>
+                                                <a href="../../login.html" style="text-decoration: none;">
+                                                        <div class="ms-3">
+                                                                <div class="border-none">
+                                                                        <p class="text-black"></p>
+                                                                </div>
+                                                                <ul class="mt-4 pl-0">
+                                                                        <li>Sign Out</li>
+                                                                </ul>
                                                         </div>
-                                                        <ul class="mt-4 pl-0">
-                                                                <li>Sign Out</li>
-                                                        </ul>
-                                                </div>
+                                                        </a>
                                         </div>
                                 </li>
 
@@ -312,23 +328,27 @@
                                                         </div>
                                                 </div>
 
+
+
+                                                
+
                                                 <div class=" row d-flex p-4">
                                                         <div class="col-md-3">
-                                                                <h3 class="mb-0 font-weight-normal nav-option">Pay Bills</h3>
+                                                                <h3 class="mb-0 font-weight-normal nav-option"><a href="">Pay Bills</a></h3>
                                                                 
                                                         </div>
                                                         <div class="col-md-3">
                                                                 <h3 class="mb-0 font-weight-normal nav-option"
                                                                         data-toggle="Qcollapse"
-                                                                        data-target="#QuickPayCollapse">Quick Pays</h3>
+                                                                        data-target="#QuickPayCollapse"><a href="">Quick Pays</a></h3>
                                                         </div>
                                                         <div class="col-md-3">
                                                                 <h3 class="mb-0 font-weight-normal nav-option">
-                                                                        Complaints</h3>
+                                                                       <a href="">Complaints</a> </h3>
                                                         </div>
                                                         <div class="col-md-3">
                                                                 <h3 class="mb-0 font-weight-normal nav-option">
-                                                                        Transactions</h3>
+                                                                     <a href="">Transactions</a> </h3>
                                                         </div>
                                                 </div>
                                         </div>
