@@ -5,7 +5,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Complaints</title>
+        <title>Transactions</title>
         <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css" />
         <link rel="stylesheet" href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css" />
         <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css" />
@@ -336,7 +336,7 @@
 
 
 
-                                                <div class=" row d-flex p-4">
+                                                <div class=" row d-flex">
                                                         <div class="col-md-3">
                                                                 <h3 class="mb-0 font-weight-normal nav-option"><a
                                                                                 href="../charts/billPayment.html">Pay Bills</a></h3>
@@ -361,48 +361,45 @@
                                                 </div>
                                         </div>
 
-                                        <div id="cards" class="">
-                                                <div class="container p-4">
-        
-                                                        <div class="containe border-top-0 d-flex justify-content-center">
-                                                                <div class=" row border-5">
-                                                                        <div class="card1 p-4">
-                                                                                <div class="card-body text-center">
-                                                                                       <h1><a href="">Raise Complaint</a></h1> 
-                                                                                </div>
-                                                                                <div class="card-body text-center">
-                                                                                        <h1><a href="">Complaint Status</a></h1>    
-                                                                                </div>
-                                                                                <div class="card-body text-center">
-                                                                                        <h1><a href="">Search Transactions</a></h1>  
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <div class="card mb-6">
-                                                                                <div class="card-body text-center">
-                                                                                         <h1>Type Of Complaint - Transaction</h1>
-                                                                                         <form action="">
-                                                                                                <input type="text"
-                                                                                                name="BillerName"
-                                                                                                id="BillerName"
-                                                                                                class="form-control mb-3"
-                                                                                                placeholder="Enter  Transaction Id">
-                                                                                                <select name="businessType"
-                                                                                                        id="businessType"
-                                                                                                        class="form-control mb-3">
-                                                                                                        <option value="" selected="">Complaint Disposition</option><option value="1">Transaction Successful,account not updated</option><option value="Amount deducted, biller account credited but transaction ID not received">Amount deducted, biller account credited but transaction ID not received</option><option value="Amount deducted, biller account not credited &amp; transaction ID not received">Amount deducted, biller account not credited &amp; transaction ID not received</option><option value="Amount deducted multiple times">Amount deducted multiple times</option><option value="Double payment updated">Double payment updated</option><option value="Erroneously paid in wrong account">Erroneously paid in wrong account</option>
-                                                                                                </select>
-                                                                                                <textarea class="form-control mb-3" name="Description" id="Description" cols="30" rows="10"  placeholder="Description"></textarea></textarea>
-                                                                                                <button type="submit"
-                                                                                                        class="btn btn-info">submit</button>
-                                                                                         </form>
-                                                                                </div>
-                                                                        </div>
+                                        <div class="">
+                                                <div class="content-wrapper pb-0">
+                                                        <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-md-2">
+                                                                        <input type="date" id="start_date" name="start_date">
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <input type="date" id="end_date" name="end_date">
+                                                                    </div>
+                
+                                                                    <div class="col-md-6">
+                                                                        <button type="button" class="btn btn-info">Show Result</button>
+                                                                    </div>
                                                                 </div>
                                                         </div>
+                
+                                                        <table class="table mt-4">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col">Biller Name</th>
+                                                                    <th scope="col">Amount</th>
+                                                                    <th scope="col">Transaction Id</th>
+                                                                    <th scope="col">Transaction Date</th>
+                                                                    <th scope="col">Status</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <th scope="row">1</th>
+                                                                    
+                                                                    <td>No Transection found</td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                            
                                                 </div>
+                                                <!-- main-panel ends -->
                                         </div>
-
 
                                         <!-- main-panel ends -->
                                 </div>
